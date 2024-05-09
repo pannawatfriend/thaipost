@@ -1,0 +1,13 @@
+.greenLine {
+    border-left: 2px dashed #2e9a7b;
+    height: 100%;
+    position: absolute;
+    top: 10px;
+    left: 82px;
+}
+
+.kanitExtralight {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
