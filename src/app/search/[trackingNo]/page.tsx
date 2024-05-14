@@ -4,10 +4,9 @@ import Image from "next/image"
 import { use, useState, useEffect, useRef, useCallback } from "react"
 import { toPng, toJpeg } from "html-to-image"
 import { useParams, useRouter } from "next/navigation"
+// import { useRouter } from "next/router"
 import { getItemByNo } from "../../libs/fetchUtils"
 import styles from "./styles.module.css"
-import { it } from "node:test"
-import { get } from "http"
 import Head from "next/head"
 
 export interface Item {
@@ -76,23 +75,33 @@ export default function Page() {
         return inputString.substring(0, 16)
     }
 
-    const onButtonClick = useCallback(() => {
-        if (ref.current === null) {
-            return
-        }
+    
 
-        toPng(ref.current, { cacheBust: true })
-            .then((dataUrl) => {
-                const link = document.createElement("a")
-                link.download = `${trackingNo}.png`
-                link.href = dataUrl
-                setDataURL(dataUrl)
-                link.click()
-                // console.log(dataUrl)
-            })
-            .catch((err) => {
-                console.log(err)
-            })
+    const onButtonClick = useCallback(() => {
+        // if (ref.current === null) {
+        //     return
+        // }
+
+        const div = document.getElementById("content")
+
+        if (div) {
+            toPng(div)
+                .then((dataUrl) => {
+                    const link = document.createElement("a")
+                    link.download = `${trackingNo}.png`
+                    link.href = dataUrl
+                    setDataURL(dataUrl)
+                    link.click()
+                    // router.push(`/search/${trackingNo.toString()}`)
+                    // router.back()
+                    // router.forward()
+                    router.refresh()
+                    console.log("dataUrl")
+                })
+                .catch((err) => {
+                    console.log(err)
+                })
+        }
     }, [ref])
 
     return (
@@ -105,7 +114,7 @@ export default function Page() {
                 <div className={styles.kanitExtralight}>
                     <div className="border">
                         <div
-                            ref={ref}
+                            id="content"
                             className="flex flex-col w-[700px] h-fit pb-16 bg-white items-center text-[#606266]"
                         >
                             <div className="flex justify-between first-letter:h-[15%] mt-6 mb-4 w-full">

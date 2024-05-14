@@ -1,8 +1,9 @@
 "use client"
 import { on } from "events"
 import Image from "next/image"
-import { use, useState } from "react"
+import { use, useState, useEffect } from "react"
 import { useRouter } from 'next/navigation'
+import Router from "next/router"
 
 export default function Home() {
     const router = useRouter()
@@ -18,6 +19,10 @@ export default function Home() {
         event.preventDefault();
         router.push(`/search/${strTaacking}`)
     }
+
+    // useEffect(() => {
+    //     Router.reload()
+    // }, [])
 
     return (
         <main className="flex justify-center items-center bg-white w-dvw h-dvh">
