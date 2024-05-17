@@ -75,12 +75,22 @@ export default function Page() {
         return inputString.substring(0, 16)
     }
 
-    
-
     const onButtonClick = useCallback(() => {
-        // if (ref.current === null) {
-        //     return
-        // }
+        if (dataURL) {
+            const t1 = (dataUrl: string) => {
+                const link = document.createElement("a")
+                link.download = `${trackingNo}.png`
+                link.href = dataUrl
+                setDataURL(dataUrl)
+                link.click()
+                // router.push(`/search/${trackingNo.toString()}`)
+                // router.back()
+                // router.forward()
+                router.refresh()
+                console.log("dataUrl")
+            }
+            t1(dataURL)
+        }
 
         const div = document.getElementById("content")
 
@@ -95,13 +105,18 @@ export default function Page() {
                     // router.push(`/search/${trackingNo.toString()}`)
                     // router.back()
                     // router.forward()
-                    router.refresh()
+
                     console.log("dataUrl")
+                })
+                .then(() => {
+                    window.close()
                 })
                 .catch((err) => {
                     console.log(err)
                 })
         }
+        router.refresh()
+        router.push("/")
     }, [ref])
 
     return (
@@ -111,7 +126,7 @@ export default function Page() {
             </Head>
             <main className="flex flex-col justify-center items-center bg-white w-dvw h-dvh">
                 <h2 className="text-black text-2xl">ตรวจสอบสถานะ</h2>
-                <div className={styles.kanitExtralight}>
+                <div className="kanitExtralight">
                     <div className="border">
                         <div
                             id="content"
@@ -132,7 +147,7 @@ export default function Page() {
                                     </svg>
                                     <div className="ml-5">
                                         <div className="font-semibol">
-                                            1.{barcode}55555555
+                                            1.{barcode}
                                         </div>
                                         <div className="text-[#3B3C4E] font-bold">
                                             {location}
@@ -250,8 +265,15 @@ export default function Page() {
                                     <span>นำจ่ายสำเร็จ</span>
                                 </div>
                             </div>
+                            <div className="flex text-blue-800 gap-3 mt-2 text-sm underline">
+                                <span>ลายเซ็น</span>
+                                <span>ติดต่อเจ้าหน้าที่</span>
+                            </div>
 
-                            <div className="flex flex-col h-[72%] w-full mt-5 ">
+                            <div className="flex flex-col h-[72%] w-full mt-5 relative ">
+                                {/* <div className="absolute border border-black w-[150px] h-[150px] top-[30px] right-[150px] bg-white">
+                                    {immuItems[0].signature && <img src={immuItems[0].signature} alt="signature" />}
+                                </div> */}
                                 {immuItems.map((item: Item, index: number) => (
                                     <div
                                         className="flex text-sm h-fit"
@@ -298,7 +320,7 @@ export default function Page() {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className="mt-5">
                     <button
                         className="btn bg-blue-700 w-[130px] text-white hover:scale-[110%] hover:bg-blue-400"
                         onClick={() => {

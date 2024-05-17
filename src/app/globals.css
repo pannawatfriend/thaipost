@@ -2,11 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face{
+  font-family: 'Kanit-Light';
+  src: url('/fonts/Kanit/Kanit-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
 }
+
+html, button, label, .kanitExtralight{
+
+  font-family: 'Kanit-Light', sans-serif
+}
+
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+}
+
+/* h2 {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+} */
 /* 
 body {
   color: rgb(var(--foreground-rgb));
@@ -17,6 +36,8 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+้
 
 @layer utilities {
   .text-balance {
