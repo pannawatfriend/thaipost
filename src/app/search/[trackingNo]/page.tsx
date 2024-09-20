@@ -1,5 +1,4 @@
 "use client"
-import { on } from "events"
 import Image from "next/image"
 import { use, useState, useEffect, useRef, useCallback } from "react"
 import { toPng, toJpeg } from "html-to-image"
@@ -8,6 +7,8 @@ import { useParams, useRouter } from "next/navigation"
 import { getItemByNo } from "../../libs/fetchUtils"
 import styles from "./styles.module.css"
 import Head from "next/head"
+import nodeHtmlToImage from "node-html-to-image"
+import { revalidatePath } from "next/cache"
 
 export interface Item {
     barcode: string
@@ -75,28 +76,73 @@ export default function Page() {
         return inputString.substring(0, 16)
     }
 
-    const onButtonClick = useCallback(() => {
-        if (dataURL) {
-            const t1 = (dataUrl: string) => {
-                const link = document.createElement("a")
-                link.download = `${trackingNo}.png`
-                link.href = dataUrl
-                setDataURL(dataUrl)
-                link.click()
-                // router.push(`/search/${trackingNo.toString()}`)
-                // router.back()
-                // router.forward()
-                router.refresh()
-                console.log("dataUrl")
-            }
-            t1(dataURL)
-        }
+    // const onButtonClick = useCallback(() => {
+    //     // if (dataURL) {
+    //     //     const t1 = (dataUrl: string) => {
+    //     //         const link = document.createElement("a")
+    //     //         link.download = `${trackingNo}.png`
+    //     //         link.href = dataUrl
+    //     //         setDataURL(dataUrl)
+    //     //         link.click()
+    //     //         // router.push(`/search/${trackingNo.toString()}`)
+    //     //         // router.back()
+    //     //         // router.forward()
+    //     //         router.refresh()
+    //     //         console.log("dataUrl")
+    //     //     }
+    //     //     t1(dataURL)
+    //     // }
+
+    //     const div = document.getElementById("content")
+
+    //     if (div) {
+    //         toPng(div)
+    //             .then((dataUrl) => {
+    //                 const link = document.createElement("a")
+    //                 link.download = `${trackingNo}.png`
+    //                 link.href = dataUrl
+    //                 setDataURL(dataUrl)
+    //                 link.click()
+    //                 // router.push(`/search/${trackingNo.toString()}`)
+    //                 // router.back()
+    //                 // router.forward()
+
+    //                 console.log("dataUrl")
+    //             })
+    //             .then(() => {
+    //                 window.close()
+    //             })
+    //             .catch((err) => {
+    //                 console.log(err)
+    //             })
+    //     }
+    //     // router.refresh()
+    //     // router.push("/")
+    //     // revalidatePath("/")
+    // }, [ref])
+
+    const onButtonClick = useCallback(async () => {
+        // if (dataURL) {
+        //     const t1 = (dataUrl: string) => {
+        //         const link = document.createElement("a")
+        //         link.download = `${trackingNo}.png`
+        //         link.href = dataUrl
+        //         setDataURL(dataUrl)
+        //         link.click()
+        //         // router.push(`/search/${trackingNo.toString()}`)
+        //         // router.back()
+        //         // router.forward()
+        //         router.refresh()
+        //         console.log("dataUrl")
+        //     }
+        //     t1(dataURL)
+        // }
 
         const div = document.getElementById("content")
 
         if (div) {
             toPng(div)
-                .then((dataUrl) => {
+                .then(async (dataUrl) => {
                     const link = document.createElement("a")
                     link.download = `${trackingNo}.png`
                     link.href = dataUrl
@@ -105,18 +151,27 @@ export default function Page() {
                     // router.push(`/search/${trackingNo.toString()}`)
                     // router.back()
                     // router.forward()
+                    // new Promise(() => {
+                    //     setTimeout(() => {
+                    //         console.log("World!")
+                    //     }, 5000)
+                    // })
 
                     console.log("dataUrl")
                 })
                 .then(() => {
-                    window.close()
+                    setTimeout(() => {
+                        window.close()
+                    }, 1000)
+                    // window.close()
                 })
                 .catch((err) => {
                     console.log(err)
                 })
         }
-        router.refresh()
-        router.push("/")
+        // router.refresh()
+        // router.push("/")
+        // revalidatePath("/")
     }, [ref])
 
     return (
@@ -324,7 +379,8 @@ export default function Page() {
                     <button
                         className="btn bg-blue-700 w-[130px] text-white hover:scale-[110%] hover:bg-blue-400"
                         onClick={() => {
-                            router.push("/")
+                            // router.push("/")
+                            window.close()
                         }}
                     >
                         กลับหน้าหลัก
