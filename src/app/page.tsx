@@ -18,7 +18,7 @@ export default function Home() {
     const onSearch = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault()
         if (strTaacking) {
-           router.push(`/searchh/${strTaacking}`)
+           router.push(`/search/${strTaacking}`)
         }
     }
 
