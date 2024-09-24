@@ -18,7 +18,7 @@ export default function Home() {
     const onSearch = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault()
         if (strTaacking) {
-            window.open("http://localhost:3000/search/test1", "_blank")
+           router.push(`/searchh/${strTaacking}`)
         }
     }
 

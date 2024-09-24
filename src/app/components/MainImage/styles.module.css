@@ -1,0 +1,9 @@
+/* .outer {
+    color: aqua;
+    background-image: url("/public/images/inDelivery.png");
+} */
+
+@font-face {
+    font-family: MinecrafterReg;
+    src: url(../../assets/fonts/nKKZ-Go6G5tXcraBGwCKd6xBDFs.woff2);
+}
