@@ -75,7 +75,7 @@ export default function Page() {
             <main className="flex flex-col justify-center items-center bg-white w-dvw h-dvh">
                 <h2 className="text-black text-2xl">ตรวจสอบสถานะ</h2>
                 <div className="kanitExtralight">
-                    <div className="border border-b-2 w-[700px] h-[700px]">
+                    <div className="border border-b-2 w-[1100px] h-[700px]">
                         {dataURL ? (
                             <img src={dataURL} alt="Guido Van Rossum" />
                         ) : (

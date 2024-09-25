@@ -127,10 +127,16 @@ export default function MainImage() {
                             display: "flex",
                             flexDirection: "column",
                             marginLeft: "16px",
-                            fontFamily: "Kanit-Medium"
+                            fontFamily: "Kanit-Medium",
                         }}
                     >
-                        <div style={{ display: "flex", flexDirection: "row", fontWeight: "bold", }}>
+                        <div
+                            style={{
+                                display: "flex",
+                                flexDirection: "row",
+                                fontWeight: "bold",
+                            }}
+                        >
                             <div style={{ display: "flex" }}> 1.{barcode}</div>
                             <img
                                 src={barcodeBase64}
@@ -193,6 +199,7 @@ export default function MainImage() {
                                     fontSize: "29px",
                                     lineHeight: "22pt",
                                     margin: "0 4px",
+                                    fontFamily: "Kanit-Medium",
                                 }}
                             >
                                 {latestDate.date}
@@ -481,7 +488,11 @@ export default function MainImage() {
                                 ></path>
                             </svg>
                             <div
-                                style={{ display: "flex", marginLeft: "115px" }}
+                                style={{
+                                    display: "flex",
+                                    marginLeft: "115px",
+                                    fontFamily: "Kanit-Medium",
+                                }}
                             >
                                 {calDateTime(data.status_date)} น.
                             </div>
