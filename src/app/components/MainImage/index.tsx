@@ -74,7 +74,7 @@ export default function MainImage() {
         }
     }
 
-    const latestDate = parseBuddhistDate("15/04/2567 13:23:12+07:00")
+    const latestDate = parseBuddhistDate(currentStatus.status_date)
     console.log(latestDate)
 
     return (
