@@ -24,7 +24,7 @@ export async function GET(req: Request) {
     
 
     return new ImageResponse(<MainImage />, {
-        width: 700,
+        width: 1100,
         height: 700,
         fonts: [
             {

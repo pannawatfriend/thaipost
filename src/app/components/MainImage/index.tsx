@@ -29,6 +29,8 @@ export default function MainImage() {
         "data:image/png;base64,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"
     const sucessBase64 =
         "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADIBAMAAABfdrOtAAAAMFBMVEVHcEwAsDQAsDQAsDQAsDQAsDQAsDQAsDQAsDT///+u5b6d1qUnqD6CwoRKqlJms2i/ytK3AAAACHRSTlMAIlDsvJfScqySsOcAAAX4SURBVHja7Vw9bFRHEPYPzlGaBAWXh0DiSgJBcUmA4kokBLg0BeRKkoiI1j/YK9vnq/cQ0GL7DC0g0Z9AiPbsiN5yRA+nKIK8u3tv377ZfTM7u5sm04GRP95+s983O/szNoaP8TPXr9w5P7t0/s6V679NjwWIY/cui1z8eLPqGeLbGwKI2yd9QlwThrjgC2b8D2GJX7yQc6IhrLHyKx/jtCiNS9yhuiYQcYE1ZBN1gYplRjZPNAQyVqrhMdxRKBiuKON1QYplF/bnBDEe0DF+F+T4iYpxXDjEzzSMinCKuyFJdyL/lHCMc3iMKeEcV9GD1XAHWZkOPViEAasIVtwNM9UdJv4RwYyLYVlHc/+9YMet0g+Z5YMslX3Kd8JD/BD+Q0o/xcuHlHwKP7UQCfaN8BTzFpC6L5DlIBKPl/z7/kBWjdUc7/d+fPX6IPtTNUj+9qWU7V5pFrPyd31L/ovSTbM4BO0JhpSdEuprrA8ZYMh2+jeL/mWrPwSRPauAHfExWlI+tToka5K0UpDHtqnCG621EYZ8ZBN83mh9TkEe2iqKmh9KlPQq5hdvtJoS+pLCePFm4hsJcFKcjzMskL0M5Jny1ws+7Wojo0SZJwXr4qm8Qkn7k/qDqkdzVyhpW6yel8AvM5DnuR8s+rMSEyWaqfAoWVdG6yD/o6o3TTkEp2JBWWZ8UfJM+9Gir1myqVDywlzkjYeiRIhpT8JloUSVr0lPMq/UKqM462cqtiyUqMyzeF9TKOmay3se733YS3TmK+EoybogLAluZRhZYQcI8Uw4SjJ3ZJV1e3ZK0hKPo/Nmmc+rPSu5FOeVn8B/4cFMjM6rWcqUJ0qe29bBkyEpGakXJ4PXTcWQnsO1oJQMJZLT2LQ4b77xyZgmm1aZVydKKOdVJwpnmlidV50olbCUDMR+Kiwlg9nIqB7LZD6rIhkTvo+hJJnyR4M5rzLl3VVFLYZ6dpBaYEoSXXE3388lzqsY8FxgShLxcgZpShQlCYhzjYqQ+bRSdQZRnPdJGYir0iOcN9P6WT4lJucdNosYIFhKEhDvbQiPIGhKEmsM6bxcEJTzckFQzsvkBOe8zBQmUOIOQqBkyVlWkDI/khUngWzhKXFXYaTzpiBOptXHOS/PGQmUJCAuhUQL6bxpIVELTElSErkUd3sESlwrSILMD0HAgvv9h3+6nDaEXnBDS4e/vv5Xdw74zpsuHYBF0GAfd5fRhtAXQRWjV3S8UJIs5yaMMt7uObchCh0cs2bsdD1QIuBmwVbJiOOdN2sWzJmdtf2C57xZ26NmmQWQtRKcN2vgzJh/CZjHBOfNWlGTZvUD85hGybCpNmX7kmIeEykZtgcnLJwAeUyS+bTRqbdsN/Mgeh73aZSMdgTqZm8F8pjivCLb27hv1r9ioiLbEDnzhXJ4TQPJ5TGVkgXD1sbGlo7SIbch0pg3bdK80UGUPCZSkm7SFHcE9nWUNI+bkkZJttFYt2lgPo/XaDKvbJnWDAYM5DG2DZGXR8OWQF+CeUx0XnUzE6glNl6BedykOa+6LQvtBTXBPCY6r7rBDK5RDqE8fkkqhvKHSsCiG8hjMiWLZccXgDwmOm/++AK8KfC2kMfbRJnPn45plC3aCoFxXu2cIrwSKuYxzXm1wzGGPeZiHtMomUcdWDo0gThQYl7N7xtAOtRZYtts3NxiULKAPQ63DqKgnLdwHM58sA/MY5TzFg9CGpfzYB536AlsPxgF5XGPqimlByGLedx2Gy1rj2XfSVNWaUd59TzGmeJF4qFkTY93XUfL3i7qW5csyNwqOyuRy2MUI6Y7Ag1cZ3OnS7cS5OH9dyOUbZTIGw/v23fmW4n3tndxGMZrCCXtyI2Pf26//hvZd1v9b6+GRLnkEue6TpSLR1GuUMW5DBblWlucC3pRrhrGuTQZ5fpnnIusca7kRrlcHOeadJQL33Gurse5hB/lOYE4DyPEeeIhzmMVcZ7diPKASJynUOI86oLnhfM8TZyHduI8GRTp8aM4zzjFeZAq0tNayZwJ/0jYgJzgz539H9HiC2Lp8t2NbB43AAAAAElFTkSuQmCC"
+    const greenTriangle =
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEABAMAAACuXLVVAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAASUExURUdwTFmtdFmuc1mtc1mtdFmtdGhy3SoAAAAFdFJOUwDARy2O69mHOgAAAtFJREFUeNrt3EtS21AQhWEnlywAiTuPnGSOHJhTxMzjFL3/rUQkYCxbj/vo7pNUnX8D6vp0aVuuQpsNY4wxxhhjjDHGGGOMMcYYY+z/Luy+3CIvv91f3+y3sBHCXZShwyNqgr/XHyb4AQJ4kteeMQSdHGsgAPF9gAOCoJeTWiwAhGAEACAYAwAIzgDcCc4B3Ak6uch1F3yMlwMcPmMBXAmmAFwJJgEcCaYBHAlmANwI5gDcCGYBnAhCnB/AZR32slCLBXAhWARwIFgGcCBYATAnWAMwJ+hktQazBJ3WYQKAKUEKgClBEoAhQRqAIUEigBlBKoAZQTKAEUGI6QOYrMNeMmqxACYEWQAGBHkABgSZAOoEuQDqBJ1k12CWoNE6LABQJSgBUCUoAlAkKANQJCgEUCMoBVAjKAZQIgixfACVddhLRS0WQIWgCkCBoA5AgaASoJqgFqCaoJPqGswSVFqHCgBVBBoAVQQqABUEOgAVBEoAxQRaAMUEagCFBCHqDVC0DntRrMUCFBGoAhQQ6AIUECgDZBNoA2QTdKJeg1mChevQACCLwAIgi8AEIIPABiCDwAggmcAKIJnADCCRIES7AZLWYS+GtViAJAJTgAQCW4AEAmOAVQJrgFWCTsxrMEswcR06ACwSeAAsErgALBD4ACwQOAHMEngBzBK4AcwQhOg3wOQ67MWxFgswSeAKMEHgCzBB4AxwQeANcEHQiXsNZgnOrEMAwIgAATAigACcEGAATghAAEcCFMCRAAbwShAiboA/6/CDAHsYBnhCDvA83AHk9V/uwRV0gOEe3GMH+Ln5hh3gF/YMvpzCiB3ggB9AwOEH4BmA/xnCF9En7AAt/sMoYE/hLf4LCfYePPwLX0r9f5s4fzIJsFPw9gKVHerZ8O0VMuEr5vH88f0Hgu3+2r3xa4TCbuvcd4v/BmOMMcYYY4wxxhhjjDHGGGOMlfQbaC8mWhj1RkEAAAAASUVORK5CYII="
 
     const calStatus = () => {
         if (statusNumber <= 104) {
@@ -44,29 +46,36 @@ export default function MainImage() {
     // const status = 4
 
     function calDateTime(inputString: string) {
-        // const date = new Date(inputString)
-        // console.log(date)
-        // const formattedDate = date.toLocaleDateString("th-TH", {
-        //     day: "numeric",
-        //     month: "numeric",
-        //     year: "numeric",
-        //     hour: "numeric",
-        //     minute: "numeric",
-        // })
-        // return formattedDate
-
         return inputString.substring(0, 16)
     }
 
-    const customFont = {
-        fontFamily: "CustomFont",
-        "@font-face": {
-            fontFamily: "CustomFont",
-            src: `url('/fonts/nKKZ-Go6G5tXcraBGwCKd6xBDFs.woff2'), url('/fonts/nKKZ-Go6G5tXcraVGwCKd6xB.woff2') format("woff2")`,
-            fontWeight: "normal",
-            fontStyle: "normal",
-        },
+    const parseBuddhistDate = (buddhistDateString: string) => {
+        const [datePart, timePart] = buddhistDateString.split(" ")
+        const [day, monthName, buddhistYear] = datePart.split("/").map(Number)
+        const gregorianYear = buddhistYear - 543
+        const isoDateString = `${gregorianYear}-${String(monthName).padStart(
+            2,
+            "0"
+        )}-${String(day).padStart(2, "0")}T${timePart}`
+        const thaiDate = new Date(isoDateString).toLocaleDateString("th-TH", {
+            year: "numeric",
+            month: "short",
+            day: "numeric",
+            weekday: "long",
+            calendar: "buddhist",
+        })
+        const [weekday, date, month, year] = thaiDate.split(" ")
+        return {
+            weekday: weekday.replace("วัน", "").replace("ที่", ""),
+            date,
+            month,
+            year,
+            time: timePart.substring(0, 5),
+        }
     }
+
+    const latestDate = parseBuddhistDate("15/04/2567 13:23:12+07:00")
+    console.log(latestDate)
 
     return (
         <div
@@ -76,7 +85,8 @@ export default function MainImage() {
                 width: "100%",
                 height: "100%",
                 backgroundColor: "#fff",
-                color: "#606266",
+                color: "#000000A6",
+                fontSize: "14px",
             }}
         >
             <div
@@ -92,13 +102,13 @@ export default function MainImage() {
             >
                 <div
                     style={{
-                        fontSize: "1rem",
                         display: "flex",
                         flexDirection: "row",
                         marginLeft: "16px",
+                        width: "280px",
                     }}
                 >
-                    <div style={{ display: "flex", flexDirection: "column" }}>
+                    {/* <div style={{ display: "flex", flexDirection: "column" }}>
                         <svg
                             className="heart"
                             aria-hidden="true"
@@ -111,15 +121,15 @@ export default function MainImage() {
                         >
                             <path d="m12.75 20.66 6.184-7.098c2.677-2.884 2.559-6.506.754-8.705-.898-1.095-2.206-1.816-3.72-1.855-1.293-.034-2.652.43-3.963 1.442-1.315-1.012-2.678-1.476-3.973-1.442-1.515.04-2.825.76-3.724 1.855-1.806 2.201-1.915 5.823.772 8.706l6.183 7.097c.19.216.46.34.743.34a.985.985 0 0 0 .743-.34Z" />
                         </svg>
-                    </div>
+                    </div> */}
                     <div
                         style={{
                             display: "flex",
                             flexDirection: "column",
-                            color: "#3B3C4E",
+                            marginLeft: "16px",
                         }}
                     >
-                        <div style={{ display: "flex", flexDirection: "row" }}>
+                        <div style={{ display: "flex", flexDirection: "row", fontWeight: "bold", }}>
                             <div style={{ display: "flex" }}> 1.{barcode}</div>
                             <img
                                 src={barcodeBase64}
@@ -129,34 +139,95 @@ export default function MainImage() {
                                 style={{ margin: "6px 0 0 6px" }}
                             />
                         </div>
-                        <div>{location}</div>
+                        <div
+                            style={{
+                                fontSize: "16px",
+                                color: "#3B3C4E",
+                            }}
+                        >
+                            {location}
+                        </div>
                     </div>
                 </div>
                 <div
                     style={{
                         display: "flex",
-                        height: "70px",
+                        // height: "70px",
                         flexDirection: "column",
-                        alignItems: "flex-end",
+                        alignItems: "center",
                         // border: "1px solid #00B034",
                         marginRight: "16px",
+                        width: "340px",
                     }}
                 >
                     <div
                         style={{
                             color: "#00B034",
                             justifyContent: "flex-end",
-                            fontSize: "18px",
+                            fontSize: "20px",
+                            fontWeight: "bolder",
                         }}
                     >
                         {detail}
                     </div>
-                    <span style={{ fontSize: "13px" }}>
-                        ชื่อผู้รับ: {receiver}
-                    </span>
-                    <span style={{ fontSize: "13px" }}>
-                        สถานะ: {deliveryDescription}
-                    </span>
+                    <span>ชื่อผู้รับ: {receiver}</span>
+                    <span>สถานะ: {deliveryDescription}</span>
+                </div>
+                <div
+                    style={{
+                        display: "flex",
+                        // border: "1px solid #000",
+                        width: "280px",
+                        height: "100%",
+                        justifyContent: "space-between",
+                    }}
+                >
+                    <div style={{ display: "flex", flexDirection: "column" }}>
+                        <span style={{ lineHeight: "10pt", margin: "4px" }}>
+                            {latestDate.weekday}
+                        </span>
+                        <div style={{ display: "flex", flexDirection: "row" }}>
+                            <span
+                                style={{
+                                    fontSize: "29px",
+                                    lineHeight: "22pt",
+                                    margin: "0 4px",
+                                }}
+                            >
+                                {latestDate.date}
+                            </span>
+                            <div
+                                style={{
+                                    display: "flex",
+                                    flexDirection: "column",
+                                }}
+                            >
+                                <span style={{ lineHeight: "12pt" }}>
+                                    {latestDate.month}
+                                </span>
+                                <div
+                                    style={{
+                                        display: "flex",
+                                        flexDirection: "row",
+                                        lineHeight: "10pt",
+                                    }}
+                                >
+                                    <span>{latestDate.year}</span>
+                                    <span>{latestDate.time}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img
+                        src={greenTriangle}
+                        alt="greenTriangle"
+                        width={15}
+                        height={15}
+                        style={{
+                            alignSelf: "flex-end",
+                            margin: "0 8px 10px 0",
+                        }}
+                    />
                 </div>
             </div>
             <div
@@ -167,7 +238,7 @@ export default function MainImage() {
                     flexDirection: "row",
                     alignItems: "center",
                     justifyContent: "center",
-                    fontSize: "13px",
+                    marginTop: "4px",
                     // border: "1px solid #000",
                 }}
             >
@@ -196,7 +267,7 @@ export default function MainImage() {
                             position: "absolute",
                             width: "90px",
                             top: "64px",
-                            left: "4px",
+                            left: "-2px",
                         }}
                     >
                         รับเข้าระบบ
@@ -204,13 +275,10 @@ export default function MainImage() {
                 </div>
                 <div
                     style={{
-                        width: "60px",
+                        width: "125px",
                         height: "3px",
                         backgroundColor: status >= 2 ? "#EF4444" : "#CBD5E0",
                     }}
-                    className={`w-[60px] h-[3px] ${
-                        status >= 2 ? "bg-red-500" : "bg-slate-200"
-                    }`}
                 ></div>
                 <div
                     style={{
@@ -238,8 +306,9 @@ export default function MainImage() {
                     <span
                         style={{
                             position: "absolute",
-                            top: "64px",
                             width: "90px",
+                            top: "64px",
+                            left: "-5px",
                         }}
                     >
                         ระหว่างขนส่ง
@@ -247,13 +316,10 @@ export default function MainImage() {
                 </div>
                 <div
                     style={{
-                        width: "60px",
+                        width: "125px",
                         height: "3px",
                         backgroundColor: status >= 3 ? "#EF4444" : "#CBD5E0",
                     }}
-                    className={`w-[60px] h-[3px] ${
-                        status >= 3 ? "bg-red-500" : "bg-slate-200"
-                    }`}
                 ></div>
                 <div
                     style={{
@@ -280,8 +346,9 @@ export default function MainImage() {
                     <span
                         style={{
                             position: "absolute",
-                            top: "64px",
                             width: "90px",
+                            top: "64px",
+                            left: "-7px",
                         }}
                     >
                         ออกไปนำจ่าย
@@ -289,13 +356,10 @@ export default function MainImage() {
                 </div>
                 <div
                     style={{
-                        width: "60px",
+                        width: "125px",
                         height: "3px",
                         backgroundColor: status >= 4 ? "#EF4444" : "#CBD5E0",
                     }}
-                    className={`w-[60px] h-[3px] ${
-                        status >= 4 ? "bg-red-500" : "bg-slate-200"
-                    }`}
                 ></div>
                 <div
                     style={{
@@ -324,13 +388,14 @@ export default function MainImage() {
                             position: "absolute",
                             width: "90px",
                             top: "64px",
+                            left: "-2px",
                         }}
                     >
                         นำจ่ายสำเร็จ
                     </span>
                 </div>
             </div>
-            <div
+            {/* <div
                 style={{
                     display: "flex",
                     flexDirection: "row",
@@ -338,20 +403,22 @@ export default function MainImage() {
                     alignItems: "center",
                     justifyContent: "center",
                     marginTop: "10px",
-                    fontSize: "13px",
                     textDecoration: "underline",
-                    color: "#1e40af",
+                    color: "#0000FF",
                 }}
             >
                 <span>ลายเซ็น</span>
                 <span>ติดต่อเจ้าหน้าที่</span>
-            </div>
+            </div> */}
 
             <div
                 style={{
                     marginTop: "30px",
                     display: "flex",
                     flexDirection: "column",
+                    // border: "1px solid #000",
+                    width: "70%",
+                    alignSelf: "center",
                 }}
             >
                 {reverseDatas.map((data, index) => (
@@ -367,8 +434,7 @@ export default function MainImage() {
                             style={{
                                 display: "flex",
                                 width: "50%",
-                                justifyContent: "center",
-                                gap: "10%",
+                                // justifyContent: "center",
                                 // position: "relative",
                             }}
                         >
@@ -413,7 +479,9 @@ export default function MainImage() {
                                     className=""
                                 ></path>
                             </svg>
-                            <div style={{ display: "flex" }}>
+                            <div
+                                style={{ display: "flex", marginLeft: "115px" }}
+                            >
                                 {calDateTime(data.status_date)} น.
                             </div>
                         </div>
@@ -429,21 +497,91 @@ export default function MainImage() {
                         </div>
                     </div>
                 ))}
-            </div>
-            {status === 4 && (
                 <div
                     style={{
                         display: "flex",
                         position: "absolute",
-                        border: "1px solid #000",
-                        width: "150px",
-                        height: "150px",
-                        bottom: "280px",
-                        right: "180px",
-                        backgroundColor: "#fff",
+                        top: "0px",
+                        right: "-130px",
+                        flexDirection: "row",
+                        gap: "10px",
+                        textDecoration: "underline",
+                        color: "#0000FF",
                     }}
                 >
-                    {immuItems[0]?.signature && (
+                    <span>ลายเซ็น</span>
+                    <span>ติดต่อเจ้าหน้าที่</span>
+                </div>
+                {status === 4 && (
+                    <div
+                        style={{
+                            display: "flex",
+                            flexDirection: "column",
+                            alignItems: "center",
+                            position: "absolute",
+                            border: "2px solid gray",
+                            borderRadius: "10px",
+                            padding: "10px 20px",
+                            height: "200px",
+                            width: "220px",
+                            top: "20px",
+                            right: "-137px",
+                            backgroundColor: "#fff",
+                        }}
+                    >
+                        <div
+                            style={{
+                                display: "flex",
+                                justifyContent: "space-between",
+                                height: "30px",
+                                width: "100%",
+                                paddingBottom: "35px",
+                                borderBottom: "1px solid #ececec",
+                            }}
+                        >
+                            <span
+                                style={{
+                                    fontSize: "16.8px",
+                                }}
+                            >
+                                ลายเซ็น
+                            </span>
+                            <svg
+                                style={{
+                                    width: "9px",
+                                    height: "14px",
+                                    color: "#ed1c24",
+                                    marginTop: "2px",
+                                    backgroundColor: "#fff",
+                                }}
+                                data-v-34bc4d82=""
+                                aria-hidden="true"
+                                focusable="false"
+                                data-prefix="fas"
+                                data-icon="times"
+                                role="img"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 352 512"
+                                className="svg-inline--fa fa-times fa-w-11"
+                            >
+                                <path
+                                    data-v-34bc4d82=""
+                                    fill="currentColor"
+                                    d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+                                    className=""
+                                ></path>
+                            </svg>
+                        </div>
+                        <div
+                            style={{
+                                display: "flex",
+                                width: "150px",
+                                height: "150px",
+                                backgroundColor: "#fff",
+                                // border: "1px solid #000",
+                            }}
+                        >
+                            {/* {immuItems[0]?.signature && (
                         <img
                             src={immuItems[0]?.signature}
                             onError={(e) => {
@@ -454,9 +592,11 @@ export default function MainImage() {
                             width={150}
                             height={150}
                         />
-                    )}
-                </div>
-            )}
+                    )} */}
+                        </div>
+                    </div>
+                )}
+            </div>
         </div>
     )
 }
