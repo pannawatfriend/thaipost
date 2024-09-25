@@ -127,6 +127,7 @@ export default function MainImage() {
                             display: "flex",
                             flexDirection: "column",
                             marginLeft: "16px",
+                            fontFamily: "Kanit-Medium"
                         }}
                     >
                         <div style={{ display: "flex", flexDirection: "row", fontWeight: "bold", }}>
@@ -165,7 +166,7 @@ export default function MainImage() {
                             color: "#00B034",
                             justifyContent: "flex-end",
                             fontSize: "20px",
-                            fontWeight: "bolder",
+                            fontWeight: "bold",
                         }}
                     >
                         {detail}

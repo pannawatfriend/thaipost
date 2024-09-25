@@ -4,14 +4,25 @@ import { ImageResponse } from "next/og"
 import MainImage from "../../../components/MainImage/index"
 export const runtime = "edge"
 
-const loadFont = async () => {
+const loadFont = async (fontWait:string) => {
+    if (fontWait === "medium") {
+        return fetch(
+            new URL("../../../../../public/fonts/Kanit/Kanit-Medium.ttf", import.meta.url)
+        ).then((r) => r.arrayBuffer())
+    }
+    if (fontWait === "bold") {
+        return fetch(
+            new URL("../../../../../public/fonts/Kanit/Kanit-Bold.ttf", import.meta.url)
+        ).then((r) => r.arrayBuffer())
+    }
     return fetch(
         new URL("../../../../../public/fonts/Kanit/Kanit-Light.ttf", import.meta.url)
     ).then((r) => r.arrayBuffer())
 }
 
 export async function GET(req: Request) {
-    const KanitLigth = await loadFont()
+    const KanitLigth = await loadFont("light")
+    const KanitMedium = await loadFont("medium")
     // const body = await req.json()
 
     // const all = await convertHTML(JSON.stringify(body))
@@ -30,7 +41,11 @@ export async function GET(req: Request) {
             {
                 name: "Kanit-Light",
                 data: KanitLigth,
-            }
+            },
+            {
+                name: "Kanit-Medium",
+                data: KanitMedium,
+            },
         ],
         status: 200,
         statusText: "Ok",
