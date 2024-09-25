@@ -454,7 +454,7 @@ export default function MainImage() {
                                         height: "100%",
                                         borderColor: "#2e9a7b",
                                         position: "absolute",
-                                        left: "68px",
+                                        left: "96px",
                                         top: "2px",
                                     }}
                                 ></div>
@@ -465,7 +465,7 @@ export default function MainImage() {
                                     width: "18px",
                                     height: "18px",
                                     position: "absolute",
-                                    left: "60px",
+                                    left: "88px",
                                     top: "2px",
                                     color: "#2e9a7b",
                                     backgroundColor: "#fff",
@@ -490,7 +490,7 @@ export default function MainImage() {
                             <div
                                 style={{
                                     display: "flex",
-                                    marginLeft: "115px",
+                                    marginLeft: "140px",
                                     fontFamily: "Kanit-Medium",
                                 }}
                             >
